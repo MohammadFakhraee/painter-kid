@@ -17,4 +17,6 @@ It is my first android app which I focused on learning and using advanced feeatu
 - RxJava2 for its asynchronous feature
 - Used EventBus for event-based jobs
 - Lottie library for some animations
+- Used product flavors and different build types
+- Implemented in-app purchase feature using CafeBazaar
 - Used gifs, paints, voices, multi language support, and font support.
