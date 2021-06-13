@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Painter Kid</string>
+    <string name="menu_animals">animals</string>
+    <string name="menu_music">musics</string>
+    <string name="menu_fruit">fruits</string>
+    <string name="menu_princess">Princess</string>
+    <string name="menu_food">Foods</string>
+    <string name="menu_transport">Vehicles</string>
+    <string name="menu_animation_character">Animation Characters</string>
+
+    <string name="for_parent">Parent</string>
+    <string name="parental_control">Parent Control</string>
+    <string name="wrong_answer">False</string>
+    <string name="save_bitmap_error">Error in saving image</string>
+    <string name="save_bitmap_success">Successfully saved in gallery</string>
+
+    <string name="purchase_message_error_setup">Sorry, couldn\'t connect to marketplace</string>
+    <string name="purchase_message_error_query">Sorry, couldn\'t make query to marketplace</string>
+    <string name="purchase_message_error_failed_purchase">Unfortunately purchase failed.</string>
+
+    <string name="parent_tab_title_in_app">Purchasable</string>
+    <string name="parent_tab_title_about_us">About Us</string>
+
+    <string name="purchasable_title">Choose your item to purchase</string>
+    <string name="purchasable_purchase">Purchase</string>
+
+    <string name="you_are_premium">You have premium account! ^_^</string>
+
+    <string name="connecting_to_market_place">Connecting to google play</string>
+    <string name="issue_in_connecting_to_market">Error while connecting to google play</string>
+    <string name="make_sure">Make sure you are:
+    \n1. connected to the internet
+        \n2. logged in to your google account.
+    </string>
+
+    <string name="about_painter_kid_0">About Painter Kid</string>
+    <string name="about_painter_kid_1">
+        Children between 2-8 years old are the main users of the app. In this app we tried our best to take one short but calculated step in order to fill children free times and make them familiar with English language. As you might understood till now, the app will say the name of the paint alongside listening to awesome music and coloring the paints in order to learn the English equals of the paint. Our aim by making this paint is filling children free times and helping them say the correct pronunciation.
+        \nIf we receive good feedback from you dear parents, we certainly know that we are choosing the correct road and in our future products we will do better and bigger activities which help children around the world to learn English. Hope your kid enjoys the app.
+    </string>
+    <string name="about_painter_kid_2">In order to respect the rights of the musician:</string>
+    <string name="about_painter_kid_3" translatable="false">Positive_Happy by PeriTune | http://peritune.com
+\nMusic promoted by https://www.free-stock-music.com
+\nAttribution 4.0 International (CC BY 4.0)
+\nhttps://creativecommons.org/licenses/by/4.0/</string>
+
+    <string name="about_us_0">About us</string>
+    <string name="about_us_1">We are a team of two, one programmer and one designer, and with high goals adults. For starting our work and showing what we can do and what we love, we decided to product this app which had a lot of interesting challenges. In the following, we talk a bit about ourselves. 😊</string>
+    <string name="about_us_2">Programmer</string>
+    <string name="about_us_3">Mohmmad Hossein Fakhraee has developed this app  and as he says, he tried his best to put everything he learned in his first year of programming mobile applications and to make the best quality. If you want to contact him, feel free to send him email:
+\nmohammadfakhraee007@gmail.com
+</string>
+    <string name="about_us_4">Designer</string>
+    <string name="about_us_5">S. Moein MirVahabi is one talented for designing. He can work in a lot of designing fields such as ui design, motion graphics, etc. The hole design of this app is done by him. If you want to contact him, feel free to send him email:
+\nmohamadmoein98@gmail.com
+    </string>
+
+    <string name="talker">Select Talker</string>
+</resources>

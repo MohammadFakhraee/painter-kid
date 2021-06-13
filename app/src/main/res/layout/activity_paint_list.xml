@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"
+    tools:context=".feature.paint_list.PaintListActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_paintList_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_waiting" />
+
+    <ImageButton
+        android:id="@+id/btn_paintList_back"
+        android:layout_width="@dimen/button_paint_medium"
+        android:layout_height="@dimen/button_paint_medium"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_home_mine" />
+
+    <ImageButton
+        android:id="@+id/view_bottom_placeHolder"
+        android:layout_width="@dimen/button_paint_medium"
+        android:layout_height="@dimen/button_paint_medium"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_paintList_listOfPaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_paint" />
+
+    <me.cheshmak.cheshmakplussdk.advertise.CheshmakBannerAd
+        android:id="@+id/cheshmak_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/view_bottom_placeHolder"
+        android:layout_toEndOf="@id/btn_paintList_back"
+        app:banner_size="BANNER_320x50" />
+
+</RelativeLayout>

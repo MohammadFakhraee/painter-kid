@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#039BE5</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <color name="gray100">#F5F5F5</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray300">#e0e0e0</color>
+    <color name="gray400">#BDBDBD</color>
+
+    <color name="palette_blue_light">#4eb3d3</color>
+    <color name="palette_blue_dark">#084081</color>
+    <color name="palette_green_light">#64c303</color>
+    <color name="palette_green_dark">#276419</color>
+    <color name="palette_yellow_light">#ffc310</color>
+    <color name="palette_yellow_dark">#BA8E0B</color>
+    <color name="palette_orange_dark">#8daddd</color>
+    <color name="palette_orange_light">#ff5100</color>
+    <color name="palette_red_light">#f00000</color>
+    <color name="palette_red_dark">#cc0000</color>
+    <color name="palette_pink_light">#ff8ec3</color>
+    <color name="palette_pink_dark">#ff3496</color>
+    <color name="palette_purple_deep_light">#ea5eea</color>
+    <color name="palette_purple_deep_dark">#b846dd</color>
+    <color name="palette_brown_light">#D56310</color>
+    <color name="palette_brown_dark">#903e02</color>
+    <color name="palette_white">#ffffff</color>
+    <color name="palette_creme">#ffc691</color>
+    <color name="palette_gray">#bdc3c7</color>
+    <color name="palette_black">#000000</color>
+
+    <color name="red_dark">#B71C1C</color>
+    <color name="orange_dark">#ff4c0a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="transparent_black">#77000000</color>
+    <color name="transparent_colorAccent">#bbff4c0a</color>
+</resources>

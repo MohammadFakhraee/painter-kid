@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/ll_main_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_main_shop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/main_btn_shop" />
+
+        <Button
+            android:id="@+id/btn_main_setting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/main_btn_settings" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_above="@id/ll_main_buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/main_bg_elephant" />
+
+    <Button
+        android:id="@+id/btn_main_start"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/ll_main_buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/main_btn_play" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/giv_main_packageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toStartOf="@id/btn_main_start"
+        tools:src="@drawable/main_btn_play" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/giv_main_currentPackage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/giv_main_packageTitle"
+        android:layout_alignStart="@id/giv_main_packageTitle"
+        android:layout_alignEnd="@id/giv_main_packageTitle"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/iv_main_nextPackage"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_above="@id/giv_main_packageTitle"
+        android:layout_alignEnd="@id/giv_main_packageTitle"
+        android:src="@drawable/main_btn_next" />
+
+    <ImageView
+        android:id="@+id/iv_main_prevPackage"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_above="@id/giv_main_packageTitle"
+        android:layout_alignStart="@id/giv_main_packageTitle"
+        android:src="@drawable/main_btn_previous" />
+
+    <ImageView
+        android:id="@+id/iv_main_lock"
+        android:layout_width="52dp"
+        android:layout_height="65dp"
+        android:layout_above="@id/giv_main_packageTitle"
+        android:layout_alignStart="@id/giv_main_packageTitle"
+        android:layout_alignEnd="@id/giv_main_packageTitle"
+        android:src="@drawable/ic_lock" />
+
+    <FrameLayout
+        android:id="@+id/fl_main_fragmentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

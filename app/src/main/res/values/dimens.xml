@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_paint_large">75dp</dimen>
+    <dimen name="button_paint_medium">52dp</dimen>
+
+    <dimen name="radius_size">8dp</dimen>
+</resources>

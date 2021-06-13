@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('E:\\android\\keystore\\painterkid.jks')
+            storePassword 'Mohammad1021'
+            keyAlias = 'painterkid_key_alias'
+            keyPassword 'madHF1021'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "ir.mohammadhf.painterkid"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 3
+        versionName "1.0.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "isTestAds", "false"
+            buildConfigField "boolean", "isDebuging", "false"
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            buildConfigField "boolean", "isTestAds", "true"
+            buildConfigField "boolean", "isDebuging", "true"
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        global {
+            dimension "version"
+            buildConfigField "String", "CURRENT_LANG", "\"en\""
+        }
+        persian {
+            dimension "version"
+            buildConfigField "String", "CURRENT_LANG", "\"fa\""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
+    implementation "androidx.navigation:navigation-ui:2.2.2"
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'org.jetbrains:annotations:15.0'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
+repositories {
+    mavenCentral()
+}

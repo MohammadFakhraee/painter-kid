@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_purchasableItem_title"
+                style="@style/GlowTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                tools:text="Premium Account" />
+
+            <TextView
+                android:id="@+id/tv_purchasableItem_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_item_purchasable_price"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                tools:text="10,000 Tomans" />
+
+            <TextView
+                android:id="@+id/tv_purchasableItem_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_purchasableItem_price"
+                android:gravity="center"
+                android:textColor="@color/gray300"
+                android:textSize="12sp"
+                tools:text="Opens all packages" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/iv_purchasableItem_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_purchasableItem_detail"
+                android:layout_below="@id/tv_purchasableItem_title"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                tools:src="@tools:sample/avatars" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lav_purchasableItem_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_purchasableItem_detail"
+                android:layout_below="@id/tv_purchasableItem_title"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/lottie_premium" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_purchasableItem_selectedBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/transparent_black"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp" />
+</FrameLayout>

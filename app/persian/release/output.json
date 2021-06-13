@@ -1,0 +1,20 @@
+[
+  {
+    "outputType": {
+      "type": "APK"
+    },
+    "apkData": {
+      "type": "MAIN",
+      "splits": [],
+      "versionCode": 3,
+      "versionName": "1.0.0",
+      "enabled": true,
+      "outputFile": "app-persian-release.apk",
+      "fullName": "persianRelease",
+      "baseName": "persian-release",
+      "dirName": ""
+    },
+    "path": "app-persian-release.apk",
+    "properties": {}
+  }
+]
